@@ -15,8 +15,10 @@ This framework requires Xcode 12.5 or later. The following device requirements a
 * Location Services
 * iOS 14.0 or later
 
-This framework requests location and camera access. Your app `Info.plist` must include the `NSLocationWhenInUseUsageDescription` and `NSCameraUsageDescription` keys. 
+This framework requests location and camera access. Your app `Info.plist` must include the `NSLocationWhenInUseUsageDescription` and `NSCameraUsageDescription` keys.
+
+The location data required to place photos is limited to specific areas supported by Apple. Reference the [ARGeoTrackingConfiguration](https://developer.apple.com/documentation/arkit/argeotrackingconfiguration) documentation before implemeting the `NBARPhotosView` in your location.    
 
 ## Known Issues
 
-* Launching the app, loading photos in AR, backgrounding the app for a long period of time, and activating the app back to the foreground can cause the previously loaded photos to disappear. Reloading the photos from the photo picker should place them back in AR space correctly.
+* Launching the app, loading photos in AR, backgrounding the app for a long period of time, and activating the app back to the foreground can cause the previously loaded photos to disappear. Reloading the `NBARPhotosViewDataModel.anchors` property should place them back in AR space correctly.
