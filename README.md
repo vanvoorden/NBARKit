@@ -1,4 +1,4 @@
-# NBARKit 0.1
+# NBARKit 0.2
 
 The `NBARPhotosView` can be used to display any photos with location metadata (latitude, longitude, and heading) in an AR space.
 
