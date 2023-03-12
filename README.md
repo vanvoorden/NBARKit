@@ -6,7 +6,7 @@ Clone the [NBARPhotos](https://github.com/vanvoorden/NBARPhotos) and [NBARRuscha
 
 ## Requirements
 
-This framework requires Xcode 12.5 or later. The following device requirements apply:
+This framework requires Xcode 14.2 or later. The following device requirements apply:
 
 * ARKit
 * arm64
@@ -22,3 +22,11 @@ The location data required to place photos is limited to specific areas supporte
 ## Known Issues
 
 * Launching the app, loading photos in AR, backgrounding the app for a long period of time, and activating the app back to the foreground can cause the previously loaded photos to disappear. Reloading the `NBARPhotosViewDataModel.anchors` property should place them back in AR space correctly.
+
+## Release Notes
+
+### 0.2
+* Built from Xcode 14.2.
+
+### 0.1
+* Initial Release
