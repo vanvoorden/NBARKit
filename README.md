@@ -1,4 +1,4 @@
-# NBARKit 1.0
+# NBARKit 0.2
 
 The `NBARPhotosView` can be used to display any photos with location metadata (latitude, longitude, and heading) in an AR space.
 
@@ -6,7 +6,7 @@ Clone the [NBARPhotos](https://github.com/vanvoorden/NBARPhotos) and [NBARRuscha
 
 ## Requirements
 
-This framework requires Xcode 15.4 or later. The following device requirements apply:
+This framework requires Xcode 14.2 or later. The following device requirements apply:
 
 * ARKit
 * arm64
@@ -23,12 +23,10 @@ The location data required to place photos is limited to specific areas supporte
 
 * Launching the app, loading photos in AR, backgrounding the app for a long period of time, and activating the app back to the foreground can cause the previously loaded photos to disappear. Reloading the `NBARPhotosViewDataModel.anchors` property should place them back in AR space correctly.
 
-## License
+## Release Notes
 
-Copyright 2021 North Bronson Software
+### 0.2
+* Built from Xcode 14.2.
 
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+### 0.1
+* Initial Release
